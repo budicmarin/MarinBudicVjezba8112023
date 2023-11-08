@@ -83,6 +83,7 @@
             // 
             this.txPassword.Location = new System.Drawing.Point(151, 181);
             this.txPassword.Name = "txPassword";
+            this.txPassword.PasswordChar = '*';
             this.txPassword.Size = new System.Drawing.Size(283, 22);
             this.txPassword.TabIndex = 6;
             // 
@@ -132,9 +133,9 @@
         private System.Windows.Forms.Label lbPassword;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.TextBox txUsername;
-        private System.Windows.Forms.TextBox txPassword;
         private System.Windows.Forms.Button btLogin;
         private System.Windows.Forms.Button btBack;
+        private System.Windows.Forms.TextBox txPassword;
     }
 }
 

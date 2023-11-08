@@ -28,35 +28,48 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
-            this.pbSlika = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pbSlika)).BeginInit();
+            this.dGKorisnici = new System.Windows.Forms.DataGridView();
+            this.btNoviKorisnik = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.dGKorisnici)).BeginInit();
             this.SuspendLayout();
             // 
-            // pbSlika
+            // dGKorisnici
             // 
-            this.pbSlika.Image = ((System.Drawing.Image)(resources.GetObject("pbSlika.Image")));
-            this.pbSlika.Location = new System.Drawing.Point(12, 12);
-            this.pbSlika.Name = "pbSlika";
-            this.pbSlika.Size = new System.Drawing.Size(776, 426);
-            this.pbSlika.TabIndex = 0;
-            this.pbSlika.TabStop = false;
+            this.dGKorisnici.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dGKorisnici.Location = new System.Drawing.Point(53, 84);
+            this.dGKorisnici.Name = "dGKorisnici";
+            this.dGKorisnici.RowHeadersWidth = 51;
+            this.dGKorisnici.RowTemplate.Height = 24;
+            this.dGKorisnici.Size = new System.Drawing.Size(662, 359);
+            this.dGKorisnici.TabIndex = 0;
+            // 
+            // btNoviKorisnik
+            // 
+            this.btNoviKorisnik.Location = new System.Drawing.Point(527, 460);
+            this.btNoviKorisnik.Name = "btNoviKorisnik";
+            this.btNoviKorisnik.Size = new System.Drawing.Size(180, 23);
+            this.btNoviKorisnik.TabIndex = 1;
+            this.btNoviKorisnik.Text = "Novi Korisnik";
+            this.btNoviKorisnik.UseVisualStyleBackColor = true;
+            this.btNoviKorisnik.Click += new System.EventHandler(this.btNoviKorisnik_Click);
             // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.pbSlika);
+            this.ClientSize = new System.Drawing.Size(800, 495);
+            this.Controls.Add(this.btNoviKorisnik);
+            this.Controls.Add(this.dGKorisnici);
             this.Name = "Form2";
             this.Text = "Form2";
-            ((System.ComponentModel.ISupportInitialize)(this.pbSlika)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dGKorisnici)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.PictureBox pbSlika;
+        private System.Windows.Forms.DataGridView dGKorisnici;
+        private System.Windows.Forms.Button btNoviKorisnik;
     }
 }
